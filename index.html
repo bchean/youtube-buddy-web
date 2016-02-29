@@ -3,23 +3,22 @@
     <head>
         <meta charset="utf-8">
         <title>YouTube Buddy Dashboard</title>
+        <link href="css/components.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Jaldi:700|Yantramanav" rel="stylesheet" type="text/css">
     </head>
     <body>
         <h1>YouTube Buddy Dashboard</h1>
         <div class="pings-data">
             <h2>History from the last 24 hours</h2>
-            <div class="pings-loading one-day-ago">Loading pings...</div>
+            <div id="pings-last-24-hrs">Loading...</div>
         </div>
         <div class="pings-data">
             <h2>History from the last 7 days</h2>
-            <div class="pings-loading one-week-ago">Loading pings...</div>
+            <div id="pings-last-7-days">Loading...</div>
         </div>
-        <div class="videos-data">
-            <h2>All video history</h2>
-        </div>
-        <div class="videos-loading">Loading videos...</div>
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="js/load-pings.js"></script>
-        <script src="js/load-videos.js"></script>
+        <script src="js/vendor.js"></script>
+        <script src="js/components.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
