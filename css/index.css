@@ -1,6 +1,29 @@
-@import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css';
+html {
+  height: 100%;
+}
+
 body {
-  background-color: #3F1255;
+  min-width: 320px;
+  height: 100%;
+  background-color: #2D0244;
+  overflow-x: hidden;
   font-family: 'Jaldi', sans-serif;
   color: #BBB;
+}
+
+.container {
+  min-height: 100%;
+  background-color: rgba(63, 18, 85, 0.9);
+  padding: .75em;
+}
+
+.pings-data {
+  margin-top: 1em;
+}
+
+@media only screen and (min-width: 1025px) {
+  .container {
+    width: 75%;
+    margin-left: 25%;
+  }
 }

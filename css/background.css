@@ -1,0 +1,16 @@
+.shapes {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.triangle {
+  width: 0;
+  border-left: calc(40px / 2) solid transparent;
+  border-right: calc(40px / 2) solid transparent;
+  border-bottom: calc(40px * .866) solid #A90DFF;
+  position: absolute;
+}
