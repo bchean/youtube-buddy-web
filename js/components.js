@@ -3647,6 +3647,7 @@ var ListOfPingStat = function (_React$Component) {
                     dataType: 'json'
                 }).done(function (res) {
                     this.updateListContents(res);
+                    $(window).trigger('ytb_pingListLoad');
                 }.bind(this)).fail(function (jqXHR, textStatus, errThrown) {
                     // TODO Response error handling.
                     this.setState({
@@ -3656,6 +3657,7 @@ var ListOfPingStat = function (_React$Component) {
             } else if (this.props.pingStatPropsList) {
                 // This prop exists only for testing purposes.
                 this.updateListContents(this.props.pingStatPropsList);
+                $(window).trigger('ytb_pingListLoad');
             } else {
                 throw new Error('Invalid props passed to component.');
             }
